@@ -2,34 +2,26 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import React from 'react'
+import Card from './components/Card'
+import Data from './data.json'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  let items = [] ; 
+  items = Data.map((item) => <Card  cardTitle={item.title} cardDesc={item.desc} />) ; 
+  // for(let x = 0 ; x<Data.length ; x++){
+  //   items.push(<Card cardTitle={Data[x].title}  cardDesc={Data[x].desc}/>)
+  // }
+  return <div>
+            <h1 className='headingStyle'>Todo App</h1>
+            {/* <Card cardTitle={Data[0].title} cardDesc={Data[0].desc} />
+            <Card cardTitle={Data[1].title} cardDesc={Data[1].desc} />
+            <Card cardTitle={Data[2].title} cardDesc={Data[2].desc} />
+            <Card cardTitle={Data[3].title} cardDesc={Data[3].desc} /> */}
+            {items}
+    
+           </div>
 }
 
 export default App

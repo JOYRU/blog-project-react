@@ -1,25 +1,33 @@
 .headingStyle{
     background-color: purple;
     color:white ; 
-    padding:15px; 
+    padding:5px; 
+    margin: 5px;
     text-align: center;
+    display:flexbox ; 
+    position:sticky ;
+    top:0px ; 
+    width: 100%;
 }
 .card{
-    background-color: antiquewhite;
+    background-color: red;
     box-shadow: 2px 4px 4px grey;
     border-radius: 5px;
     margin: 10px;
     padding:10px ; 
     width:390px ; 
     display: inline-block;
+    text-align: center;
 }
 .cardTitle{
     text-align:center ; 
     margin-bottom: 5px;
+    text-align: center;
 }
 .cardDesc{
     text-align: justify;
     margin-bottom: 5px;
+    text-align: center;
 }
 .cardFooter{
     text-align: center;
