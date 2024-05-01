@@ -5,11 +5,14 @@ import './App.css'
 import React from 'react'
 import Card from './components/Card'
 import Data from './data.json'
+import products from "./assets/products/camera.jpg" ;
 
 
 function App() {
   let items = [] ; 
-  items = Data.map((item) => <Card  cardTitle={item.title} cardDesc={item.desc} />) ; 
+  items = Data.map((item) => <Card  cardTitle={item.title} cardDesc={item.desc} cardCover={item.cover} />
+  
+) ; 
   // for(let x = 0 ; x<Data.length ; x++){
   //   items.push(<Card cardTitle={Data[x].title}  cardDesc={Data[x].desc}/>)
   // }
@@ -20,6 +23,8 @@ function App() {
             <Card cardTitle={Data[2].title} cardDesc={Data[2].desc} />
             <Card cardTitle={Data[3].title} cardDesc={Data[3].desc} /> */}
             {items}
+
+          
     
            </div>
 }

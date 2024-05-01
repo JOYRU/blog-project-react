@@ -1,20 +1,25 @@
 [
     {
         "title": "call Home",
-        "desc" : "this is desc1"
+        "desc" : "this is desc1",
+        "cover": "../assets/products/camera.jpg"
 
     },
     {
         "title": "call Father",
-        "desc" : "this is desc2"
+        "desc" : "this is desc2",
+        "cover": "../assets/products/laptop.jpg"
+
     },
     {
         "title": "call Mother",
-        "desc" : "this is desc3"
+        "desc" : "this is desc3",
+        "cover": "../assets/products/nivea.jpg"
     },
     {
         "title": "call Sister",
-        "desc" : "this is desc4"
+        "desc" : "this is desc4",
+        "cover": "../assets/products/watch.jpg"
     }
 
 
